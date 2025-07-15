@@ -1,11 +1,11 @@
-#Table Customer
+--Table Customer
 create_dim_customer = """
 CREATE TABLE dim_customer (
     customer_id TEXT PRIMARY KEY
 )
 """
 
-#Table Location
+--Table Location
 create_dim_location = """
 CREATE TABLE dim_location (
     location_id TEXT PRIMARY KEY,
@@ -16,28 +16,28 @@ CREATE TABLE dim_location (
 )
 """
 
-# Table Category
+--- Table Category
 create_dim_category = """
 CREATE TABLE dim_category (
     category_cleaned_id TEXT PRIMARY KEY
 )
 """
 
-# Table Segment
+--- Table Segment
 create_dim_segment = """
 CREATE TABLE dim_segment (
     segment_id TEXT PRIMARY KEY
 )
 """
 
-# Table Order_mode
+-- Table Order_mode
 create_dim_order_mode = """
 CREATE TABLE dim_order_mode (
     order_mode_id TEXT PRIMARY KEY
 )
 """
 
-# Table Products
+--Table Products
 create_dim_product = """
 CREATE TABLE dim_product (
     product_id TEXT PRIMARY KEY,
@@ -49,7 +49,7 @@ CREATE TABLE dim_product (
 )
 """
 
-#Table Dates
+--Table Dates
 create_dim_date = """
 CREATE TABLE dim_date (
     date_id TEXT PRIMARY KEY,
@@ -60,7 +60,7 @@ CREATE TABLE dim_date (
 )
 """
 
-#Table Facts (Sales)
+--Table Facts (Sales)
 create_fact_sales = """
 CREATE TABLE fact_sales (
     sale_id INTEGER PRIMARY KEY AUTOINCREMENT,
